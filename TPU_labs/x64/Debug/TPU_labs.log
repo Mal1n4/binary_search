@@ -1,5 +1,4 @@
 ﻿  TPU_labs.cpp
-D:\TPU\informatika1_2\TPU_labs\TPU_labs\TPU_labs.cpp(13,24): warning C4244: +=: преобразование "double" в "unsigned __int64", возможна потеря данных
-D:\TPU\informatika1_2\TPU_labs\TPU_labs\TPU_labs.cpp(19,28): warning C4244: +=: преобразование "double" в "unsigned __int64", возможна потеря данных
-D:\TPU\informatika1_2\TPU_labs\TPU_labs\TPU_labs.cpp(22,21): warning C4244: инициализация: преобразование "unsigned __int64" в "int", возможна потеря данных
+D:\TPU\informatika1_2\TPU_labs\TPU_labs\TPU_labs.cpp(23,9): warning C4101: i: неиспользованная локальная переменная
+D:\TPU\informatika1_2\TPU_labs\TPU_labs\TPU_labs.cpp(57,15): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
   TPU_labs.vcxproj -> D:\TPU\informatika1_2\TPU_labs\x64\Debug\TPU_labs.exe
