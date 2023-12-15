@@ -1,19 +1,17 @@
 ﻿#include <iostream>
 using namespace std;
 
-int& selection_sort(int array[], int size) {
-    for (int i = 0; i < size - 1; i++) { //go through array n-1 times
-        int min = i; //set left border
-        for (int j = i + 1; j < size; j++) {
-            if (array[j] < array[min]) { //seeking minimum in rest part of array
-                min = j;
-            }
-        }
-        if (min != i) { //moving minimum to the left border
-            swap(array[i], array[min]);
-        }
-    }
-    return *array;
+int compare(const void* a, const void* b)
+{
+    const int* x = (int*)a;
+    const int* y = (int*)b;
+
+    if (*x > *y)
+        return 1;
+    else if (*x < *y)
+        return -1;
+
+    return 0;
 }
 
 
@@ -69,7 +67,7 @@ int main() {
         cout << s[i] << " ";
     }cout << endl;
 
-    selection_sort(s, n);
+    qsort(s, n, sizeof(int), compare);
     cout << "Sorted array: ";
     for (int i = 0; i < n; i++) { //output
         cout << s[i] << " ";
